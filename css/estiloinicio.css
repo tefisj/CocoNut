@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content {
+    min-height: 80px;
+    background: #ff949a;
+}
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.subm {
+    position: absolute;
+    display: none;
+    background: #ff949a;
+}
+.menu .navbar li:hover > ul {
+    display: block;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+.menu .navbar ul li a:hover {
+    background-color: white;
+    color: #ff949a;
+    border-radius: 5px;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:991px) {
+    .content {
+        min-height: 70px;
+    }
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ff949a;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+.banner {
+    width: 1fr;
+    height: 450px;
+    background-image: url(/img/coconut.png);
+    background-position: center;
+}
+h2 {
+    text-align: center;
+}
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.cont-img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-right: 30px;
+}
+.imgn {
+    max-width: 250px;
+    height: 265px;
+    padding: 15px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.text {
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+}
+@media (min-width: 768px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
+}
+p#izquierda {
+    float: left;
+}
+.footer {
+    background-color: #ff949a;
+    padding: 20px 0;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    width: calc(100% - 100px);
+    margin-right: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff949a;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscribe button:hover {
+    background-color: #ffffff;
+}
